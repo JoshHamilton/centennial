@@ -1,0 +1,163 @@
+#IE #scroll .ie7-hover {
+  color: #ADF5FF;
+}
+
+#IE #scroll a.bt-anchor:hover {
+  border-bottom: 1px solid #ADF5FF;
+}
+
+/* Nav */
+#IE #prev {
+  top: 3px;
+}
+
+#IE #slider #nav a {
+  zoom: 1;
+}
+
+#IE #slider #nav #next {
+  width: 83px;
+}
+
+#IE #slider #nav #prev {
+  float: left;
+}
+
+#IE #slider #nav #dates-nav {
+  float: left;
+  clear: none;
+}
+
+#IE #scroll .decade h2,
+#IE #scroll .snapshot h2,
+#IE #scroll .video h2 {
+  padding-right: 40px;
+  margin-right: 15px;
+}
+
+#IE #scroll .decade span.click-me,
+#IE #scroll .snapshot span.click-me,
+#IE #scroll .video span.click-me {
+  position: absolute;
+  float: right;
+}
+
+#IE #scroll .milestones {
+	clear: none;
+}
+
+#IE #scroll #d1940 .milestones {
+  width: 580px;
+}
+
+#IE #scroll #d1960 .milestones a {
+  zoom: 1;
+  margin-right: 4px;
+}
+
+#IE #scroll #d1960 .imgs-right {
+  width: 116px;
+}
+
+#IE #scroll #d1970 .milestones {
+  clear: left;
+  width: 830px;
+}
+
+#IE #scroll #d1980 .milestones {
+  clear: left;
+  width: 830px;
+}
+
+#IE #scroll #d1990 .decade h2 span.overview,
+#IE #scroll #d1990 .snapshot h2,
+#IE #scroll #d1990 .video h2 {
+  font-size: 23px;
+}
+
+#IE #scroll #d1990 .video {
+  display: inline;
+}
+
+#IE #scroll #d2000 .decade,
+#IE #scroll #d2000 .snapshot {
+  margin-right: 10px;
+}	
+	
+#IE #scroll #d2000 .decade h2 span.overview,
+#IE #scroll #d2000 .snapshot h2 {
+  font-size: 23px;
+}
+
+#IE #scroll #d2000 .video h2 {
+  font-size: 16px;
+}
+
+#IE #scroll #d2000 .two-deans {
+  float: left;
+}
+
+#IE #scroll #d2000 .video.bonner {
+  float: left;
+}
+
+#IE #scroll #d2000 .video.bonner h2 {
+	float: left;
+  padding-right: 0px;
+  margin: 0;
+}
+
+#IE #scroll #d2000 .video.bonner h2 span.click-me {
+	float: left;
+	padding-left: 0;
+	margin: 0;
+}
+
+#IE #scroll #d2000 .video.whiteside {
+  float: right;
+  position: relative;
+  right: 25px;
+}
+
+#IE #scroll #d2000 .video.whiteside h2 {
+  float: right;
+  padding-right: 0px;
+  margin: 0;
+}
+
+#IE #scroll #d2000 .video.whiteside h2 span.click-me {
+	float: left;
+	margin: 0 0 0 -10px;
+}
+
+#IE #scroll #d2000 .milestones {
+	width: 830px;
+}
+
+#IE #scroll #d2000 .milestones a {
+  border-bottom: 0;
+  text-decoration: underline;
+}
+
+#IE #scroll #d2000 .milestones a:hover {
+  color: #ADF5FF;
+}
+
+#IE #scroll #d2000 .bt-anchor {
+  display: block;
+}
+
+#IE #scroll #d2000 .video {
+  display: inline;
+}
+
+#IE #scroll #d2010 .decade h2 span.overview,
+#IE #scroll #d2010 .snapshot h2,
+#IE #scroll #d2010 .video h2 {
+  font-size: 22px;
+}
+
+#IE .video .close {
+  z-index: 9999;
+  zoom: 1;
+}

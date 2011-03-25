@@ -1,0 +1,19 @@
+
+#IE #nav #prev {
+  position: relative;
+  bottom: 3px;
+}
+
+#IE #scroll h2 span.overview {
+  position: inherit;
+}
+
+
+/*
+.shadow {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')
+  progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=235, Color='#000000')
+  progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=335, Color='#000000')
+  progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=435, Color='#000000')";
+}
+*/

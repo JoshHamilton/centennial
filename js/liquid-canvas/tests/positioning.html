@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Liquid Canvas - Positioning Test</title>
+
+    <style type="text/css">
+      .relative-container { position:relative; }
+      .canvas-wrapper { width:20%; }
+      .canvas-inner { border:1px solid #f88; padding:40px; }
+      .canvas-standalone { width:20%; border:1px solid #f88; padding:40px; }
+      #top-right-body { position:absolute; top:10px; right:10px; }
+      #bottom-right-body { position:absolute; bottom:10px; right:10px; }
+      #top-right-container { position:absolute; top:10px; right:10px; }
+    </style>
+
+    <!--[if IE]><script type="text/javascript" src="../excanvas.js"></script><![endif]-->
+    <script type="text/javascript" src="../jquery-1.3.2.js"></script>
+    <script type="text/javascript" src="../liquid-canvas.js"></script>
+    <script type="text/javascript" src="../liquid-canvas-plugins.js"></script>
+
+    <script type="text/javascript">
+      $(window).load(function() {
+        $(".canvas-inner, .canvas-standalone").liquidCanvas(
+            "[shadow border gradient] => roundedRect{radius:50}");
+      });
+    </script>
+
+  </head>
+  <body>
+    <h1>Liquid Canvas - Positioning Test</h1>
+    <div id="top-right-body" class="canvas-standalone">
+      Top Right, "absolute" in body
+    </div>
+    <div id="bottom-right-body" class="canvas-wrapper">
+      <div class="canvas-inner">
+        Bottom Right, inside "absolute" container
+      </div>
+    </div>
+    <div class="relative-container">
+      <div class="canvas-standalone">
+        A canvas inside a "relative" positioned container
+      </div>
+    </div>
+    <div class="relative-container">
+      <div id="top-right-container" class="canvas-standalone">
+        An "absolute" positioned canvas inside a "relative" positioned container
+      </div>
+    </div>
+    <div class="canvas-standalone">
+      <div class="canvas-standalone">
+        A canvas inside a canvas
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,985 @@
+/**
+ * Reset
+ * --------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+ol, ul {
+  list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+}
+blockquote, q {
+  quotes: "" "";
+}
+
+/**
+ * Fonts
+ */
+/* KelmscottRoman-fontfacekit */
+@font-face {
+  font-family: 'KelmscottRomanRegular';
+  src: url('KelmscottRoman-fontfacekit/KELMSCOT-webfont.eot');
+  src: local('☺'), url('KelmscottRoman-fontfacekit/KELMSCOT-webfont.woff') format('woff'), url('KelmscottRoman-fontfacekit/KELMSCOT-webfont.ttf') format('truetype'), url('KelmscottRoman-fontfacekit/KELMSCOT-webfont.svg#webfontr7Rxsk5Z') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Liberation-Serif-fontfacekit*/
+@font-face {
+  font-family: 'LiberationSerifRegular';
+  src: url('Liberation-Serif-fontfacekit/LiberationSerif-Regular-webfont.eot');
+  src: local('☺'), url('Liberation-Serif-fontfacekit/LiberationSerif-Regular-webfont.woff') format('woff'), url('Liberation-Serif-fontfacekit/LiberationSerif-Regular-webfont.ttf') format('truetype'), url('Liberation-Serif-fontfacekit/LiberationSerif-Regular-webfont.svg#webfontEmzul7o6') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LiberationSerifItalic';
+  src: url('Liberation-Serif-fontfacekit/LiberationSerif-Italic-webfont.eot');
+  src: local('☺'), url('Liberation-Serif-fontfacekit/LiberationSerif-Italic-webfont.woff') format('woff'), url('Liberation-Serif-fontfacekit/LiberationSerif-Italic-webfont.ttf') format('truetype'), url('Liberation-Serif-fontfacekit/LiberationSerif-Italic-webfont.svg#webfontwPBd45Tu') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LiberationSerifBold';
+  src: url('Liberation-Serif-fontfacekit/LiberationSerif-Bold-webfont.eot');
+  src: local('☺'), url('Liberation-Serif-fontfacekit/LiberationSerif-Bold-webfont.woff') format('woff'), url('Liberation-Serif-fontfacekit/LiberationSerif-Bold-webfont.ttf') format('truetype'), url('Liberation-Serif-fontfacekit/LiberationSerif-Bold-webfont.svg#webfontf9BAJ4zK') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LiberationSerifBoldItalic';
+  src: url('Liberation-Serif-fontfacekit/LiberationSerif-BoldItalic-webfont.eot');
+  src: local('☺'), url('Liberation-Serif-fontfacekit/LiberationSerif-BoldItalic-webfont.woff') format('woff'), url('Liberation-Serif-fontfacekit/LiberationSerif-BoldItalic-webfont.ttf') format('truetype'), url('Liberation-Serif-fontfacekit/LiberationSerif-BoldItalic-webfont.svg#webfontyZSLk305') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Linux-Libertine-fontfacekit */
+@font-face {
+  font-family: 'Linux-Libertine-fontfacekit/LinuxLibertineORegular';
+  src: url('Linux-Libertine-fontfacekit/linlibertine_re-4.7.5ro-webfont.eot');
+  src: local('☺'), url('Linux-Libertine-fontfacekit/linlibertine_re-4.7.5ro-webfont.woff') format('woff'), url('Linux-Libertine-fontfacekit/linlibertine_re-4.7.5ro-webfont.ttf') format('truetype'), url('Linux-Libertine-fontfacekit/linlibertine_re-4.7.5ro-webfont.svg#webfont8NsTJTiW') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LinuxLibertineOItalic';
+  src: url('Linux-Libertine-fontfacekit/linlibertine_it-4.2.6ro-webfont.eot');
+  src: local('☺'), url('Linux-Libertine-fontfacekit/linlibertine_it-4.2.6ro-webfont.woff') format('woff'), url('Linux-Libertine-fontfacekit/linlibertine_it-4.2.6ro-webfont.ttf') format('truetype'), url('Linux-Libertine-fontfacekit/linlibertine_it-4.2.6ro-webfont.svg#webfontvCsMDCpR') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LinuxLibertineOBold';
+  src: url('Linux-Libertine-fontfacekit/linlibertine_bd-4.1.5ro-webfont.eot');
+  src: local('☺'), url('Linux-Libertine-fontfacekit/linlibertine_bd-4.1.5ro-webfont.woff') format('woff'), url('Linux-Libertine-fontfacekit/linlibertine_bd-4.1.5ro-webfont.ttf') format('truetype'), url('Linux-Libertine-fontfacekit/linlibertine_bd-4.1.5ro-webfont.svg#webfontubSRtDpK') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LinuxLibertineOBoldItalic';
+  src: url('Linux-Libertine-fontfacekit/linlibertine_bi-4.1.0ro-webfont.eot');
+  src: local('☺'), url('Linux-Libertine-fontfacekit/linlibertine_bi-4.1.0ro-webfont.woff') format('woff'), url('Linux-Libertine-fontfacekit/linlibertine_bi-4.1.0ro-webfont.ttf') format('truetype'), url('Linux-Libertine-fontfacekit/linlibertine_bi-4.1.0ro-webfont.svg#webfontz0mSHz5F') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LinuxLibertineOCRegular';
+  src: url('Linux-Libertine-fontfacekit/linlibertine_c-4.0.4ro-webfont.eot');
+  src: local('☺'), url('Linux-Libertine-fontfacekit/linlibertine_c-4.0.4ro-webfont.woff') format('woff'), url('Linux-Libertine-fontfacekit/linlibertine_c-4.0.4ro-webfont.ttf') format('truetype'), url('Linux-Libertine-fontfacekit/linlibertine_c-4.0.4ro-webfont.svg#webfontM01ZbPOT') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* PowellAntique-kit */
+@font-face {
+  font-family: 'PowellAntiqueRegular';
+  src: url('PowellAntique-kit/powellantique-webfont.eot');
+  src: local('☺'), url('PowellAntique-kit/powellantique-webfont.woff') format('woff'), url('PowellAntique-kit/powellantique-webfont.ttf') format('truetype'), url('PowellAntique-kit/powellantique-webfont.svg#webfontvItaCWiz') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* DroidSans_kit */
+@font-face {
+  font-family: 'DroidSansBold';
+  src: url('DroidSans_kit/droidsans-bold-webfont.eot');
+  src: local('☺'), url('DroidSans_kit/droidsans-bold-webfont.woff') format('woff'), url('DroidSans_kit/droidsans-bold-webfont.ttf') format('truetype'), url('DroidSans_kit/droidsans-bold-webfont.svg#webfont0GGWtJRH') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DroidSansRegular';
+  src: url('DroidSans_kit/droidsans-webfont.eot');
+  src: local('☺'), url('DroidSans_kit/droidsans-webfont.woff') format('woff'), url('DroidSans_kit/droidsans-webfont.ttf') format('truetype'), url('DroidSans_kit/droidsans-webfont.svg#webfontuXeOUTCH') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/**
+ * Elements
+ */
+body {
+  background: #000b14;
+  color: #fff;
+  font-family: 'LiberationSerifRegular';
+}
+
+a {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgba(100%, 100%, 100%, 0.7);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'PowellAntiqueRegular';
+}
+
+h1 {
+  text-align: center;
+}
+
+h1 a {
+  font-size: 32px;
+  font-family: 'PowellAntiqueRegular';
+  line-height: 45px;
+  border-bottom: none;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+.shadow {
+  position: relative;
+  box-shadow: 0 3px 20px #000;
+  -moz-box-shadow: 0 3px 20px #000;
+  -webkit-box-shadow: 0 3px 20px #000;  
+  
+  /* For IE 8 
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=#000000, direction='180', strength='10');*/
+  /* For IE 5.5 - 7 
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(color=#000000, direction='180', strength='10')";*/
+}
+
+#wrapper .hide { display: none; }
+#wrapper .show { display: inline-block; }
+
+/**
+ * Application loading
+ * ---------------------------------*/
+/*
+html.loading #wrapper {
+  display: none;
+}
+
+#load-img {
+  position: absolute;
+  width: 400px;
+  height: 280px;
+}
+
+#load-img img {
+  margin: 0 auto; 
+}
+*/
+
+
+/**
+ * Header
+ * --------------------------------- */
+#header {
+  padding: 20px;
+}
+
+/**
+ * Footer
+ * --------------------------------- */
+#footer {
+  clear: both;
+}
+
+/**
+ * Timeline
+ * --------------------------------- */
+#wrapper {
+  width: 960px;
+  height: 728px;
+  margin: 5px auto 0 auto;  
+  background: transparent url(images/bg-parchment.jpg) no-repeat 0 0;
+  position: relative;
+}
+
+#slider {
+  width: 900px;
+  height: 490px; /* Fixed */
+  margin: 0 auto;
+  position: relative;
+}
+
+.shadow-scrolling {
+  width: 0px; /* Width is animated to 145px */
+  height: 490px;
+  position: absolute;
+  z-index: 99;
+  display: none;
+  overflow-x: hidden;
+}
+
+.shadow-scrolling-left {
+  left: 30px;
+}
+
+.shadow-scrolling-right {
+  right: 30px;
+  bottom: 108px;
+}
+
+#scroll {
+  width: 900px;
+  height: 490px; /* Fixed */
+  margin: 0 auto;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  clear: left;
+}
+
+#scroll a {
+  color: #FF6600;
+  border-bottom: 1px solid #FF6600;
+  border-bottom: 1px solid rgba(255, 102, 0, 0.7);
+}
+
+#scroll a.anchor-hover {
+  border-bottom: 1px solid transparent;
+}
+
+#scroll-container {
+  float: left; /* To wrap */
+}
+
+.panel {
+  width: 862px;
+  height: 452px;
+  float: left;
+  padding: 18px;
+  list-style: none;
+  line-height: 20px;
+  border: 1px solid #000b14;
+  border-right: 0;
+  background: transparent url(images/bg-panel.png) no-repeat 0 0;
+  position: relative;
+}
+
+.panel h2 {
+  font-size: 32px;
+  line-height: 32px; 
+  cursor: pointer;
+}
+
+.decade h2 span.overview,
+.snapshot h2,
+.video h2 {
+  font-size: 26px;
+}
+
+#d2000 .decade h2 span.overview,
+#d2000 .snapshot h2,
+#d2000 .video h2 {
+  font-size: 20px;
+}
+
+.decade h2 span.overview {
+  position: relative;
+  bottom: 2px;
+}
+
+.panel.last {
+  border: 1px solid #000b14;
+  margin-right: -1px; /* 1px too many created by having a right border on the last element. */
+}
+
+.decade {
+  clear: left;
+}
+
+.decade,
+.snapshot,
+.video {
+  margin: 0 20px 16px 0;
+  float: left;
+}
+
+.video {
+  margin-right: 0;
+}
+
+#scroll .video .active-video {
+  border-bottom: 0;
+}
+
+#scroll .video .close {
+  border-bottom: 0;
+}
+
+.decade h2 span.click-me,
+.snapshot h2 span.click-me,
+.video h2 span.click-me {
+  font-size: 10px;
+  font-family: 'DroidSansRegular';
+  background: url(images/messages.png) no-repeat 0 0;
+  display: inline-block;
+  float: right;
+  line-height: 58px;
+  height: 35px;
+  margin-left: 6px;
+  opacity: 0.7;
+}
+
+#d2000 h2 span.click-me {
+  font-size: 10px;
+}
+
+#d2000 .two-deans {
+  float: right;
+}
+
+#d2000 .two-deans h2 {
+  line-height: 20px;
+  padding-right: 60px;
+  position: relative;
+}
+
+#d2000 .two-deans h2 span {
+  position: absolute;
+  top: 0;
+  left: 130px;
+}
+
+#d2000 .two-deans .bonner h2 span {
+  left: 110px;
+}
+
+#d2000 .two-deans .whiteside h2 {
+  margin-left: 10px;
+}
+
+#d2000 .two-deans .whiteside h2 span {
+  left: 135px;
+}
+
+.bt-content h3 {
+  font-size: 22px;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.bt-content {
+  z-index: 99999;
+}
+
+.bt {
+  z-index: 99999;
+}
+
+.bt-close {
+  float: right;
+  cursor: pointer;
+  display: block;
+  padding: 4px;
+}
+
+.milestones {
+  float: left;
+  clear: left;
+  width: auto;
+  background: url(images/bg-milestones.jpg) repeat-x 0 0;
+  padding: 14px;
+  margin-bottom: 18px;
+}
+
+.milestones h3 {
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: normal;
+  font-family: 'LiberationSerifRegular';
+  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgba(100%, 100%, 100%, 0.8);
+  padding-bottom: 10px;
+}
+
+.milestones ul {
+  list-style: disc;
+}
+
+.milestones li {
+  margin: 14px 20px;
+  font-size: 16px;
+}
+
+/* Using h2 since js structure already in place for video */
+.milestones .video {
+  display: inline-block;
+  margin: 0;
+  float: none;
+  margin-left: 20px;
+}
+
+.proper-title {
+  font-style: italic;
+}
+
+.imgs img {
+  float: left;
+}
+
+.imgs a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 2px;
+  background: #fdfdfd;
+}
+
+.imgs-left {
+  float: left;
+  clear: left;
+}
+
+.imgs-right {
+  float: right;
+  clear: right;
+}
+
+.imgs-right a {
+  float: right;
+  clear: right;
+}
+
+.imgs-bottom {
+  float: left;
+  clear: left;
+  width: 862px;
+}
+
+.imgs-bottom a {
+  float: left;
+  margin-right: 18px;
+}
+
+#scroll #scroll-container .panel .imgs-bottom a.last {
+  margin-right: 0;
+}
+  
+/**
+ * Specific milestones
+ * --------------------------------- */
+#d1911-1942 .milestones {
+  margin-left: 30px;
+}
+
+#d1940 .milestones {
+  width: 610px;
+}
+
+#d1950 .milestones {
+  width: 560px;
+}
+
+#d1960 .milestones {
+  width: 520px;
+  clear: none;
+  margin: 0 0 0 20px;
+}
+
+#d1970 .milestones {
+  background: url(images/bg-milestones-1x400.jpg) repeat-x 0 0;
+}
+
+#d1990 .milestones {
+  background: url(images/bg-milestones-1x400.jpg) repeat-x 0 0;
+}
+
+#d1990 .milestones li {
+  font-size: 14px;
+  margin: 6px 12px 4px 16px;
+}
+
+#d2000 .milestones {
+  background: url(images/bg-milestones-1x400.jpg) repeat-x 0 0;
+}
+
+#d2000 .milestones li {
+  font-size: 14px;
+  margin: 6px 12px 4px 16px;
+}
+
+#d2010 .milestones {
+  width: auto;
+}
+
+
+/** 
+ * Specific image wrappers
+ * --------------------------------- */
+#d1940 .imgs-bottom {
+  width: 640px;
+}
+
+#d1960 .imgs-left {
+  margin-bottom: 14px;
+}
+
+#d1960 .imgs-right {
+  margin-top: 18px;
+}
+
+/**
+ * Image grids
+ * --------------------------------- */
+.img-grid { text-align: center }
+
+.img-grid a {
+  margin: 0 30px;
+}
+
+.img-grid h2 {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.img-grid .row-1 {
+  margin-bottom: 20px;
+}
+
+#scroll #scroll-container .panel .img-grid a.last { margin-right: 0 }
+
+#d1990-imgs .img-grid a {
+  margin: 0 10px;
+}
+
+#d2000-imgs .img-grid a {
+  margin: 0 10px;
+}
+
+#d2000-imgs .img-grid a {
+  margin: 0 10px;
+}
+
+#d2010-imgs .img-grid a {
+  margin: 0 10px;
+}
+
+  
+/**
+ * Specific images
+ * --------------------------------- */
+/* 1911-1942 */
+#d1911-1942 .imgs-bottom a {
+  margin-left: 30px;
+}
+
+#scroll #scroll-container #d1911-1942 .imgs-bottom a.last {
+  float: right;
+  margin: 20px 30px 0 0;
+}
+
+#d1911-1942 .imgs-right a {
+  margin-right: 30px;
+}
+
+/* 1940 */
+#dedication {
+  margin-bottom: 30px;
+}
+
+#d1940 .imgs-bottom a {
+  margin-right: 24px;
+}
+
+#d1950 .imgs-bottom a {
+  margin-right: 90px;
+}
+
+#d1960 .imgs-bottom a {
+  margin-right: 53px;
+}
+
+/**
+ * More images indicator
+ */
+#scroll .more-images {
+  position: absolute;
+  top: 450px;
+  left: 740px;
+  z-index: 9999;
+  display: block;
+  color: #fff;
+  border-bottom: 0;
+}
+
+#scroll .more-images h3 {
+  text-transform: uppercase;
+  float: left;
+  margin-right: 12px;
+  font-size: 20px;
+  font-family: 'LinuxLibertineOBoldItalic';
+  font-weight: bold;
+  display: block;
+  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgba(100%, 100%, 100%, 0.8)
+}
+
+#scroll .images-arrow {
+  padding-top: 2px;
+  float: left;
+  opacity: 0.4;
+}
+
+#scroll .more-images-hover {
+  border-bottom: 1px solid transparent;
+}
+
+#scroll .anchor-hover h3 {
+  border-bottom: 1px solid transparent;
+}
+
+
+/**
+ * Navigation
+ * --------------------------------- */
+#nav {
+  font-size: 22px;
+  width: 900px;
+  float: left;
+  margin: 20px auto;
+}
+
+#nav a {
+  font-family: 'KelmscottRomanRegular';
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgba(100%, 100%, 100%, 0.7);
+  text-transform: capitalize;
+}
+
+/* Scroll buttons */
+#nav .scroll-button {
+  display: inline-block;
+  border-bottom: 0;
+}
+
+#nav .scroll-button span {
+  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgba(100%, 100%, 100%, 0.7);
+}
+
+#nav .anchor-hover span {
+  border-bottom: 1px solid transparent;
+}
+
+.scroll-button.left {
+  margin-right: 48px;
+}
+
+.scroll-button.right {
+  float: right;
+}
+
+.scroll-arrow {
+  position: relative;
+  top: 2px;
+  opacity: 0.6;
+}
+
+#nav .left .scroll-arrow {
+  margin-right: 10px;
+  float: left;
+}
+
+#nav .right .scroll-arrow {
+  float: right;
+  margin-left: 10px;
+}
+
+#prev {
+  position: relative;
+  bottom: 3px;
+}
+
+/* Dates nav */
+#dates-nav {
+  display: inline-block;
+  width: 640px;
+  margin: 0 auto;
+}
+
+#dates-nav li {
+  float: left;
+  padding: 0 10px;
+}
+
+#dates-nav li.last {
+  padding-right: 0;
+}
+
+#dates-nav a:hover {
+  border-bottom: 0;
+}
+
+#dates-nav a.selected {
+  color: #ff6600;
+  border-bottom: 0;
+}
+
+#dates-nav li.two-panes {
+  position: relative; /* For photo links */
+}
+
+#dates-nav a.img-link {
+  position: absolute;
+  text-transform: none;
+  top: 30px;
+  left: 10px;
+  font-size: 17px;
+}
+
+/**
+ * Beauty tips
+ * --------------------------------- */
+.bt {
+  line-height: 24px;
+}
+
+.bt h3 {
+  font-size: 30px;
+}
+
+.bt ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.bt-content p {
+  margin-bottom: 20px;
+}
+
+/**
+ * jQuery lightBox plugin
+ * This jQuery plugin was inspired and based on Lightbox 2 by Lokesh Dhakar (http://www.huddletogether.com/projects/lightbox2/)
+ * and adapted to me for use like a plugin from jQuery.
+ * @name jquery-lightbox-0.5.css
+ * @author Leandro Vieira Pinho - http://leandrovieira.com
+ * @version 0.5
+ * @date April 11, 2008
+ * @category jQuery plugin
+ * @copyright (c) 2008 Leandro Vieira Pinho (leandrovieira.com)
+ * @license CCAttribution-ShareAlike 2.5 Brazil - http://creativecommons.org/licenses/by-sa/2.5/br/deed.en_US
+ * @example Visit http://leandrovieira.com/projects/jquery/lightbox/ for more informations about this jQuery plugin
+ */
+#jquery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  width: 100%;
+  height: 500px;
+}
+#jquery-lightbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  text-align: center;
+  line-height: 0;
+}
+#jquery-lightbox a img { border: none; }
+#lightbox-container-image-box {
+  position: relative;
+  background-color: #fff;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+}
+#lightbox-container-image { padding: 10px; }
+#lightbox-loading {
+  position: absolute;
+  top: 40%;
+  left: 0%;
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  line-height: 0;
+}
+#lightbox-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+#lightbox-container-image-box > #lightbox-nav { left: 0; }
+#lightbox-nav a { outline: none;}
+#lightbox-nav-btnPrev, #lightbox-nav-btnNext {
+  width: 49%;
+  height: 100%;
+  zoom: 1;
+  display: block;
+}
+#lightbox-nav-btnPrev { 
+  left: 0; 
+  float: left;
+}
+#lightbox-nav-btnNext { 
+  right: 0; 
+  float: right;
+}
+#lightbox-container-image-data-box {
+  font: 10px Verdana, Helvetica, sans-serif;
+  background-color: #fff;
+  margin: 0 auto;
+  line-height: 1.4em;
+  overflow: auto;
+  width: 100%;
+  padding: 0 10px 0;
+}
+#lightbox-container-image-data {
+  padding: 0 10px; 
+  color: #666; 
+}
+#lightbox-container-image-data #lightbox-image-details { 
+  width: 70%; 
+  float: left; 
+  text-align: left; 
+  line-height: 16px;
+} 
+#lightbox-image-details-caption { 
+  font-weight: bold; 
+  font-family: 'LiberationSerifRegular'; 
+  font-size: 16px; 
+  margin-top: 3px; 
+  display: inline-block;
+  line-height: 20px;
+  padding-bottom: 4px;
+}
+#lightbox-image-details-currentNumber {
+  display: block; 
+  clear: left; 
+  padding-bottom: 1.0em;  
+}     
+#lightbox-secNav-btnClose {
+  width: 66px; 
+  float: right;
+  padding-bottom: 0.7em;  
+}
+
+/**
+ * jQuery Tools Overlay
+ */
+.overlay {
+  padding:40px;   
+  display:none;
+  background-image:url(js/jquery-tools/overlay/transparent.png); 
+}
+.close {
+  background:url(js/jquery-tools/overlay/close.png) no-repeat;
+  position:absolute;
+  top:2px;
+  right:5px; 
+  display:block;
+  width:35px;
+  height:35px;
+  cursor:pointer;
+}
+.player {
+  width: 480px;
+  height: 270px;
+  display: block;
+}
+
+.overlay p {
+  margin-top: 14px;
+}
+
+/**
+ * Webkit
+ */
+#webkit #nav #prev {
+  bottom: 0;
+}
+
+#webkit #scroll #d2010 .video h2 span.click-me {
+  position: absolute;
+  top: 20px;
+  left: 800px;
+}
+
+#webkit #dates-nav a.img-link {
+  top: 35px;
+}
+
+#webkit #scroll #d1960  .milestones a.bt-anchor {
+  display: inline-block;
+}
+
+/**
+ * Centennial logo
+ */
+#logo-centennial {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
