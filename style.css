@@ -243,6 +243,48 @@ html.loading #wrapper {
 }
 
 /**
+ * Centennial logo
+ */
+#logo-centennial {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+/**
+ * Memory capsule
+ */
+#memory-capsule {
+  width: 115px;
+  height: 108px;
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  border: 0;
+}
+#memory-capsule img {
+  float: left;
+}
+#memory-capsule span.memory-capsule {
+  margin-top: 8px;
+  float: left;
+  width: 80px;
+  line-height: 18px;
+}
+#memory-capsule span.click-me {
+  float: left;
+  clear: left;
+  background: url(images/messages.png) no-repeat 100% 0;
+  font-size: 11px;
+  position: relative;
+  bottom: 25px;
+  padding-right: 28px;
+  padding-top: 8px;
+  height: 22px;
+  opacity: 0.7;
+  font-family: 'DroidSansRegular';
+}
+
+/**
  * Footer
  * --------------------------------- */
 #footer {
@@ -973,13 +1015,4 @@ html.loading #wrapper {
 
 #webkit #scroll #d1960  .milestones a.bt-anchor {
   display: inline-block;
-}
-
-/**
- * Centennial logo
- */
-#logo-centennial {
-  position: absolute;
-  top: 20px;
-  left: 30px;
 }

@@ -350,7 +350,7 @@
  
   
   // Drop shadow for competent browsers.
-  if (!$.browser.msie) {
+//  if (!$.browser.msie) {
     $scroll.addClass('shadow');
     $panels
       .find('div.milestones')
@@ -358,6 +358,6 @@
       .end()
       .find('a.lb')
         .addClass('shadow');
-  }
+//  }
   
 })(jQuery);
